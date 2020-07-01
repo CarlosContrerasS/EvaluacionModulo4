@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D8EB5BEF-CFB0-D9FA-9A65-3ABF5316E1A4" name="Mejoras">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>61EFDEFF-038B-4C4E-5A77-E320CB7FF7EC</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDMejora" id="927A8B5D-C627-1346-3716-9CB01009B34D">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>717626DD-182B-B82D-F28C-FD54EA30FECC</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha" id="8B0C1520-1FA5-5903-504A-999A78623FD6">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>D4FD4E92-4B19-F0B7-27DA-280E0F863131</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Motivo" id="29FAE425-D625-8BD4-7CC9-E4C33CDEB097">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>0A318BCD-026E-0B29-9F6B-027141F3F05C</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Actividades" id="45FB8070-0992-BF05-4A9D-E241CABD8671">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>1905DA0F-4A9F-0245-E52D-984187C46BAF</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Estado" id="615DD533-DC33-CD15-6C75-E103A98FBD9D">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>A9E10355-9313-BEF9-A9B3-9B9D5BEEBCDD</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cliente_ID" id="B68EEE3B-867A-B4BB-108F-F35B40A2BA31">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>9E566C50-B0E9-8A40-9469-C94659421A41</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6DB66B81-8A8D-5FAB-EE6B-E473D8AC5777" referredColumn="04D85242-7B57-A7C3-F75A-0779FE976985"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="571F13FE-8F3E-90A2-AE62-C56EBE7BC711" name="Mejoras_PK">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>5858603E-3A88-0EF1-BC9C-C3E685307495</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="927A8B5D-C627-1346-3716-9CB01009B34D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DACB70E5-3B7B-9F1E-5EC9-079C7F1979FB" name="Mejoras_Cliente_FK">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>78FD343D-5051-A56F-8E9E-9C2BFFF23219</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B68EEE3B-867A-B4BB-108F-F35B40A2BA31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

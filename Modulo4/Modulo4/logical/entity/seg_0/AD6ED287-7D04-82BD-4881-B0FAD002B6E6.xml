@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AD6ED287-7D04-82BD-4881-B0FAD002B6E6" name="Capacitaciones">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:14:10 UTC</createdTime>
+<ownerDesignName>Modulo4</ownerDesignName>
+<engineerTo>
+<item key="E87AA304-F2B9-4FF9-F8F4-B8C3D74BA7CD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IDCapacitacion" id="B9ABFEF8-66C8-246B-F566-B6D6542D8F1F">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:16:00 UTC</createdTime>
+<ownerDesignName>Modulo4</ownerDesignName>
+<engineerTo>
+<item key="E87AA304-F2B9-4FF9-F8F4-B8C3D74BA7CD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha" id="7514C6AE-EBB9-25FB-2F20-C9223A7A979E">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:16:17 UTC</createdTime>
+<ownerDesignName>Modulo4</ownerDesignName>
+<engineerTo>
+<item key="E87AA304-F2B9-4FF9-F8F4-B8C3D74BA7CD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Hora" id="857D4869-3D53-3CA9-D4B5-87AE52AE88FB">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:17:29 UTC</createdTime>
+<ownerDesignName>Modulo4</ownerDesignName>
+<engineerTo>
+<item key="E87AA304-F2B9-4FF9-F8F4-B8C3D74BA7CD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NumAsistentes" id="3A4387D3-812E-8CB1-9186-31F0B8273B81">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:17:46 UTC</createdTime>
+<ownerDesignName>Modulo4</ownerDesignName>
+<engineerTo>
+<item key="E87AA304-F2B9-4FF9-F8F4-B8C3D74BA7CD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IDVisita" id="83488970-60BF-FA92-07DA-1A5A035207D4">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:57:15 UTC</createdTime>
+<generatorID>EED7CBBF-B44B-B60F-0D85-3A472C0440D3</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<engineerTo>
+<item key="E87AA304-F2B9-4FF9-F8F4-B8C3D74BA7CD" value="true"/>
+</engineerTo>
+<referedAttribute>9D993C08-0410-6BC1-D178-5D9BAB2B88C3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="465E6730-5FA4-CB59-5A00-C6558DF02B1E" name="Capacitaciones PK">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:16:15 UTC</createdTime>
+<ownerDesignName>Modulo4</ownerDesignName>
+<engineerTo>
+<item key="E87AA304-F2B9-4FF9-F8F4-B8C3D74BA7CD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B9ABFEF8-66C8-246B-F566-B6D6542D8F1F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

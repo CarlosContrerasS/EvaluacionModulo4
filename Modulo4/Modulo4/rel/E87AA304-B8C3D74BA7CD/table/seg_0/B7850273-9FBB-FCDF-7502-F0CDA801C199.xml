@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B7850273-9FBB-FCDF-7502-F0CDA801C199" name="Visitas">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>4BD28C4C-1B5B-CA11-C9BA-32B6BB9A394E</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDVisita" id="D177F3B7-E260-B545-AA5B-71BD82915602">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>9D993C08-0410-6BC1-D178-5D9BAB2B88C3</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Direccion" id="CC05FF87-C3BC-3830-2FBC-B42403063871">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>18671682-6D21-139D-F2C7-0A991C5A5DC0</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ciudad" id="3ED7C378-A056-EF7F-BA3D-37A54D91DB04">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>CEF33124-781D-2E28-C439-579EDD976D19</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha" id="AB23A0A2-AD7F-7C5C-AC91-75A5DE32C6E8">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>7B32D42C-0155-DFD3-C0ED-C5461B8ECC0D</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Resumen" id="42B779FB-5239-7757-0239-49FB342622A8">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>6F1E1E3E-6EB4-DB2F-A9FE-986FF6B8AF1D</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Observaciones" id="A2C510B0-97AA-B907-24BF-4A1FC8ACE00C">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>B4F39022-4692-CB96-3B83-01B4FED84014</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cliente_ID" id="9011AAC9-C02B-9B05-5A87-7AF900716FDA">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>ECFE8F5C-296C-FF94-69A2-DFE75288F6A8</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E175448B-85BF-2354-2C5D-452226161B46" referredColumn="04D85242-7B57-A7C3-F75A-0779FE976985"/>
+</associations>
+</Column>
+<Column name="Empleado_IDEmpleado" id="F1968752-9F1F-4135-66C1-232AFAA845D5">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>E1462549-06B7-D082-305A-6D84B648A072</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="36413519-A2B5-F7B0-7060-784C952A236B" referredColumn="8ECD09AB-E5E8-D113-FC62-9153C81FE4AC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C9E5ED8B-51E4-30DB-8204-B5FE5C13A4B8" name="Visitas_PK">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>0E28A8C8-2D2F-8C77-B09B-BE6B87EC6348</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D177F3B7-E260-B545-AA5B-71BD82915602"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EA6A52F5-E791-A06F-D10A-4116D3335527" name="Visitas_Cliente_FK">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>A720C900-339F-349C-0896-75BCC5C228C1</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9011AAC9-C02B-9B05-5A87-7AF900716FDA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A7E26F3C-B6A1-242C-4966-8B94EDF267D9" name="Visitas_Empleado_FK">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>B180A9E1-27A9-D5E4-0240-0583F0B16ADA</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1968752-9F1F-4135-66C1-232AFAA845D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

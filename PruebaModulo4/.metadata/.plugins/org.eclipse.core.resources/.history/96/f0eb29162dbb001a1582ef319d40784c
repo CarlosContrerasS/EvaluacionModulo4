@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Planificar Visita</title>
+</head>
+<body>
+<body>
+<h1>Planificar Visita</h1>
+<c:if test="${ccmensaje != null}">
+	<h3><c:out value="${ccmensaje}"></c:out></h3>
+</c:if>
+
+<form method="post" action="PlanificarVisita">
+	Nombre: <input type="text" name="nombre" /><br/><br/>
+	Telefono: <input type="text" name="telefono" /><br/><br/>
+	Correo electrónico: <input type="text" name="correo" /><br/><br/>
+	Rubro: <input type="text" name="rubro" /><br/><br/>
+	Dirección: <input type="text" name="direccion" /><br/><br/><br/>
+	<input type="submit" value="Agregar cliente" />
+</form>
+
+</body>
+</html>

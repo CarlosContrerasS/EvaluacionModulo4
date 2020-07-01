@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FC77DC2C-FEA3-650A-1847-EAFF5B3C4D2A" name="Pagos">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>B7453804-B568-926F-3EA0-50BB8A9FE59D</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDPago" id="3CDD6C3B-6002-B057-8B92-27A4F1D0AFFF">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>25D4C859-2C0C-6AE4-86E4-A4EA056FF6C2</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MesAnio" id="DE0675A0-D607-3DCD-256F-D1A685268A79">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>DCE49DE6-B18B-B63B-2F26-164CF84E20C8</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MontoRegular" id="91BB67C0-D338-A98C-E078-8B9F58B710EA">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>3B11BEED-80D4-86F4-E8AC-80C1824D4633</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MontoAdicionales" id="ECB1200A-3D7D-1E5F-C138-325007419242">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>53D7C006-D121-EBA7-4EB1-06CE28E6EC16</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cliente_ID" id="71C6C4CA-8718-A1DE-4C45-1834EC5960CC">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>F1459348-7091-3A7C-7A74-F69036493018</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B5A5D42F-1EA7-FE66-CF66-1DE6B673BDB0" referredColumn="04D85242-7B57-A7C3-F75A-0779FE976985"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="351B850E-76AE-DCEA-7BF2-B9DCE546B64D" name="Pagos_PK">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>840FC442-1977-DEF4-4B5C-8D5E1B620636</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3CDD6C3B-6002-B057-8B92-27A4F1D0AFFF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BD560B82-DBC4-8849-EB63-AFA59448CC0C" name="Pagos_Cliente_FK">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>DAD64241-97B2-3E60-B81E-5F16CF4B9362</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71C6C4CA-8718-A1DE-4C45-1834EC5960CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

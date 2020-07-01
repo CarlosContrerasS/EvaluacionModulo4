@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4BD28C4C-1B5B-CA11-C9BA-32B6BB9A394E" name="Visitas">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:22:31 UTC</createdTime>
+<ownerDesignName>Modulo4</ownerDesignName>
+<engineerTo>
+<item key="E87AA304-F2B9-4FF9-F8F4-B8C3D74BA7CD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IDVisita" id="9D993C08-0410-6BC1-D178-5D9BAB2B88C3">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:22:40 UTC</createdTime>
+<ownerDesignName>Modulo4</ownerDesignName>
+<engineerTo>
+<item key="E87AA304-F2B9-4FF9-F8F4-B8C3D74BA7CD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Direccion" id="18671682-6D21-139D-F2C7-0A991C5A5DC0">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:22:54 UTC</createdTime>
+<ownerDesignName>Modulo4</ownerDesignName>
+<engineerTo>
+<item key="E87AA304-F2B9-4FF9-F8F4-B8C3D74BA7CD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Ciudad" id="CEF33124-781D-2E28-C439-579EDD976D19">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:24:54 UTC</createdTime>
+<ownerDesignName>Modulo4</ownerDesignName>
+<engineerTo>
+<item key="E87AA304-F2B9-4FF9-F8F4-B8C3D74BA7CD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha" id="7B32D42C-0155-DFD3-C0ED-C5461B8ECC0D">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:25:24 UTC</createdTime>
+<ownerDesignName>Modulo4</ownerDesignName>
+<engineerTo>
+<item key="E87AA304-F2B9-4FF9-F8F4-B8C3D74BA7CD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Resumen" id="6F1E1E3E-6EB4-DB2F-A9FE-986FF6B8AF1D">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:25:35 UTC</createdTime>
+<ownerDesignName>Modulo4</ownerDesignName>
+<engineerTo>
+<item key="E87AA304-F2B9-4FF9-F8F4-B8C3D74BA7CD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Observaciones" id="B4F39022-4692-CB96-3B83-01B4FED84014">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:25:51 UTC</createdTime>
+<ownerDesignName>Modulo4</ownerDesignName>
+<engineerTo>
+<item key="E87AA304-F2B9-4FF9-F8F4-B8C3D74BA7CD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID" id="ECFE8F5C-296C-FF94-69A2-DFE75288F6A8">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:49:33 UTC</createdTime>
+<generatorID>A720C900-339F-349C-0896-75BCC5C228C1</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<engineerTo>
+<item key="E87AA304-F2B9-4FF9-F8F4-B8C3D74BA7CD" value="true"/>
+</engineerTo>
+<referedAttribute>06445F4D-5040-E99D-CD48-8EC83B2BAE44</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IDEmpleado" id="E1462549-06B7-D082-305A-6D84B648A072">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:50:36 UTC</createdTime>
+<generatorID>B180A9E1-27A9-D5E4-0240-0583F0B16ADA</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<engineerTo>
+<item key="E87AA304-F2B9-4FF9-F8F4-B8C3D74BA7CD" value="true"/>
+</engineerTo>
+<referedAttribute>EA3988B7-3286-E3F4-E289-729CC516D3A6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0E28A8C8-2D2F-8C77-B09B-BE6B87EC6348" name="Visitas PK">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:22:53 UTC</createdTime>
+<ownerDesignName>Modulo4</ownerDesignName>
+<engineerTo>
+<item key="E87AA304-F2B9-4FF9-F8F4-B8C3D74BA7CD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9D993C08-0410-6BC1-D178-5D9BAB2B88C3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

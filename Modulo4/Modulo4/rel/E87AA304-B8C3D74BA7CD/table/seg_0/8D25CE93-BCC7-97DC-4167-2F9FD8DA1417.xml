@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8D25CE93-BCC7-97DC-4167-2F9FD8DA1417" name="Asesorias">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>9FD7EF2C-31C6-B403-AD81-866913EC7A55</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDAsesoria" id="3644E58D-0E6C-9453-26DA-CC6F49B9D30E">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>DC64AF84-4436-478A-4501-667D60971CC0</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Detalle" id="57DCF9B4-AE46-9ED9-6AFB-6914FDD7B750">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>6E46CDBD-1524-76CE-4BDC-16D9DAA58A01</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Gestion" id="1FBBA78F-6037-93BC-7602-D8909127A983">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>ED50A6F7-0CA3-A967-E9C6-04CF537A1F12</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Propuestas" id="92300436-2DB6-851D-81B9-F0AEE8656DF3">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>1D1DD1D1-3B81-E7A3-8689-EF534B590F8A</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha" id="1D307CAA-AA57-6693-CA2B-7C57283FA01B">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>A0850F56-30EA-F1D8-7D78-D2EDEC3BD271</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Especial" id="75D9B625-6EFC-B99F-86EE-0DE0FC1167B8">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>318CC439-0F53-70F5-2DF0-7C26B48437FB</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Visitas_IDVisita" id="7E1662B4-A139-8600-D02E-9DA2B1A9C224">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>0B3241A9-188F-0F63-C6E1-5D8E958D9041</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6671693B-C1B2-95B1-5FEF-371C2F187B06" referredColumn="D177F3B7-E260-B545-AA5B-71BD82915602"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6D4621B2-6815-567E-EA74-3D5C45C4EAB4" name="Asesorias_PK">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>19E15260-1D63-A9F4-6412-512129F5E5AE</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3644E58D-0E6C-9453-26DA-CC6F49B9D30E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="96C543E5-AC4F-57FD-5291-2DC353B0F2C2" name="Asesorias_Visitas_FK">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>C043BAB1-E3E0-BEDA-DAC9-9C89847EF943</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E1662B4-A139-8600-D02E-9DA2B1A9C224"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

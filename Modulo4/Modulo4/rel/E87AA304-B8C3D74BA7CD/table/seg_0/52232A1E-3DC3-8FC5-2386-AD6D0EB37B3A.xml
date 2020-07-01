@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="52232A1E-3DC3-8FC5-2386-AD6D0EB37B3A" name="Empleado">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>FCD59B27-C32B-BB8C-B8D4-E60CBCD51B27</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDEmpleado" id="8ECD09AB-E5E8-D113-FC62-9153C81FE4AC">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>EA3988B7-3286-E3F4-E289-729CC516D3A6</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="4FBB8A5D-B4A6-82EE-0FC3-0B360423E285">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>02AC9F34-A9FA-2DA1-100D-2CCD6AC82F50</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Especialidad" id="32E35C66-E3A4-C716-A965-71374716EDC6">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>E642BCD4-C88E-EA18-4537-F8FECB707582</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B196E755-3A14-7509-91FA-37E4B51D4AEA" name="Empleado_PK">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:59:50 UTC</createdTime>
+<generatorID>74B81983-A712-A3A7-D362-E7C4EE4FC986</generatorID>
+<ownerDesignName>Modulo4</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8ECD09AB-E5E8-D113-FC62-9153C81FE4AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FCD59B27-C32B-BB8C-B8D4-E60CBCD51B27" name="Empleado">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:27:25 UTC</createdTime>
+<ownerDesignName>Modulo4</ownerDesignName>
+<engineerTo>
+<item key="E87AA304-F2B9-4FF9-F8F4-B8C3D74BA7CD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IDEmpleado" id="EA3988B7-3286-E3F4-E289-729CC516D3A6">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:27:37 UTC</createdTime>
+<ownerDesignName>Modulo4</ownerDesignName>
+<engineerTo>
+<item key="E87AA304-F2B9-4FF9-F8F4-B8C3D74BA7CD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="02AC9F34-A9FA-2DA1-100D-2CCD6AC82F50">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:27:54 UTC</createdTime>
+<ownerDesignName>Modulo4</ownerDesignName>
+<engineerTo>
+<item key="E87AA304-F2B9-4FF9-F8F4-B8C3D74BA7CD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Especialidad" id="E642BCD4-C88E-EA18-4537-F8FECB707582">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:28:07 UTC</createdTime>
+<ownerDesignName>Modulo4</ownerDesignName>
+<engineerTo>
+<item key="E87AA304-F2B9-4FF9-F8F4-B8C3D74BA7CD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="74B81983-A712-A3A7-D362-E7C4EE4FC986" name="Empleado PK">
+<createdBy>jacob</createdBy>
+<createdTime>2020-06-24 16:27:53 UTC</createdTime>
+<ownerDesignName>Modulo4</ownerDesignName>
+<engineerTo>
+<item key="E87AA304-F2B9-4FF9-F8F4-B8C3D74BA7CD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EA3988B7-3286-E3F4-E289-729CC516D3A6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
