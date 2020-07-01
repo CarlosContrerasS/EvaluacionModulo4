@@ -1,0 +1,56 @@
+Listar clientes
+SELECT * FROM CLiente
+
+
+Revisar clientes
+SELECT [RUT /Nombre/Telefono/CORREOELECTRONICO/RUBRO/DIRECCION] FROM CLiente
+
+Listar profesionales
+SELECT * FROM EMPLEADO
+
+
+
+Calcular accidentabilidad
+select sum(DIA_PERDIDOS) /sum(NUM_TRAB) from ACCIDENTES
+
+
+
+Listar cantidad de accidentes
+select * from ACCIDENTES
+
+
+Listar pagos clientes
+select * from PAGOS
+
+Listar atrasos clientes
+SELECT 
+CLI.RUT, CLI.nombre as "nombre Empresa", PAG.IDPago, PAG. MesAnio as "Fecha de Compromiso" from Cliente Cli
+inner join Pagos PAG on (PAG.RUT = CLI.RUT)
+where TO_DATE(PAG.MesAnio, 'dd/mm/yyyy') >= TRUNC(sysdate);
+
+
+
+Generar reporte cliente (con las capacitaciones y visitas a terreno)
+select 
+cli.RUT, cli.nombre , vis.fecha , vis.empleado_rut_empleado , cap.idcapacitacion, cap.fecha , ase.detalle , ase.fecha , 
+pag.MontoRegular, pag.mesanio,  acci.fecha, acci.suceso from Cliente cli
+INNER JOIN Visitas vis on cli.RUT = vis.RUT
+INNER JOIN Asesorias ase on ase.Visitas_IDVisita = vis.IDvisita  
+INNER JOIN Capacitaciones cap on cap.Visitas_IDvisita = vis.IDvisita
+INNER JOIN Pagos pag on pag.RUT = vis.RUT
+INNER JOIN Accidentes acci on acci.rut = vis.RUT
+where cli.rut = '2323';
+
+
+
+from CLIENTE
+select 
+cli.RUT, cli.nombre , vis.fecha , vis.empleado_rut_empleado , cap.idcapacitacion, cap.fecha , ase.detalle , ase.fecha , 
+pag.MontoRegular, pag.mesanio,  acci.fecha, acci.suceso from Cliente cli
+INNER JOIN Visitas vis on cli.RUT = vis.RUT
+INNER JOIN Asesorias ase on ase.Visitas_IDVisita = vis.IDvisita  
+INNER JOIN Capacitaciones cap on cap.Visitas_IDvisita = vis.IDvisita
+INNER JOIN Pagos pag on pag.RUT = vis.RUT
+INNER JOIN Accidentes acci on acci.rut_id = vis.RUT
+where cli.rut is NOT NULL order by cli.rut asc;
+
