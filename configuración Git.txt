@@ -1,0 +1,21 @@
+Para configurar:
+paso 1:  crear en la carpeta donde se quiere dejar los archivos.
+paso 2:  CMD git
+paso 3:  ir a ruta de la carpeta ( CD: ruta )
+paso 4:  git init
+
+para subir
+paso 1:  pegar en la carpeta el documento actualizado o nuevo
+paso 2:  CMD git
+paso 3:  ir a ruta de la carpeta ( CD: ruta )
+paso 4:  git status (revisar que marque el nuevo archivo)
+paso 5:  git add . (agregar todo lo nuevo)
+paso 6:  git commit -m "aquí va la nota de subir el/los archivo(s)"
+paso 7:  git push "https://github.com/CarlosContrerasS/EvaluacionModulo4.git" master 
+
+para descargar
+paso 1:  pegar en la carpeta el documento actualizado o nuevo
+paso 2:  CMD git
+paso 3:  ir a ruta de la carpeta ( CD: ruta )
+paso 4:  git status (revisar que marque el nuevo archivo)
+paso 5:  git pull "https://github.com/CarlosContrerasS/EvaluacionModulo4.git" master 
