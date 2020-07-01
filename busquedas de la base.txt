@@ -3,34 +3,42 @@ SELECT * FROM CLiente
 
 
 Revisar clientes
-SELECT [RUT /Nombre/Telefono/CORREOELECTRONICO/RUBRO/DIRECCION] FROM CLiente
+SELECT * FROM CLiente where RUT='' ;
 
 Listar profesionales
-SELECT * FROM EMPLEADO
+SELECT * FROM EMPLEADO 
 
 
-
-Calcular accidentabilidad
-select sum(DIA_PERDIDOS) /sum(NUM_TRAB) from ACCIDENTES
-
+Calcular accidentabilidad Clientes (crearlo a nivel MVC) misma lógica del dao lista.   CREAR
+select sum(DIA_PERDIDOS) /sum(NUM_TRAB) from ACCIDENTES      
 
 
-Listar cantidad de accidentes
+Listar cantidad de accidentes   
 select * from ACCIDENTES
 
 
-Listar pagos clientes
+Listar pagos clientes  
 select * from PAGOS
 
-Listar atrasos clientes
+
+
+Listar atrasos clientes (TODOS)  CREAR
 SELECT 
-CLI.RUT, CLI.nombre as "nombre Empresa", PAG.IDPago, PAG. MesAnio as "Fecha de Compromiso" from Cliente Cli
+CLI.RUT, CLI.nombre as "nombre Empresa", PAG.IDPago, PAG.MesAnio as "Fecha de Compromiso" from Cliente Cli
 inner join Pagos PAG on (PAG.RUT = CLI.RUT)
-where TO_DATE(PAG.MesAnio, 'dd/mm/yyyy') >= TRUNC(sysdate);
+where TO_DATE(PAG.MesAnio, 'dd/mm/yyyy') <= TRUNC(sysdate); 
 
 
+/* 
+Listar atrasos clientes (por RUT crear) misma lógica del dao lista.
+SELECT 
+CLI.RUT, CLI.nombre as "nombre Empresa", PAG.IDPago, PAG.MesAnio as "Fecha de Compromiso" from Cliente Cli
+inner join Pagos PAG on (PAG.RUT = CLI.RUT)
+where TO_DATE(PAG.MesAnio, 'dd/mm/yyyy') <=  TRUNC(sysdate);
+*/
 
-Generar reporte cliente (con las capacitaciones y visitas a terreno)
+
+Generar reporte cliente ( buscar y listar. con las capacitaciones y visitas a terreno)    CREAR
 select 
 cli.RUT, cli.nombre , vis.fecha , vis.empleado_rut_empleado , cap.idcapacitacion, cap.fecha , ase.detalle , ase.fecha , 
 pag.MontoRegular, pag.mesanio,  acci.fecha, acci.suceso from Cliente cli
@@ -43,7 +51,7 @@ where cli.rut = '2323';
 
 
 
-from CLIENTE
+Generar reporte cliente ( listar. con las capacitaciones y visitas a terreno)     CREAR
 select 
 cli.RUT, cli.nombre , vis.fecha , vis.empleado_rut_empleado , cap.idcapacitacion, cap.fecha , ase.detalle , ase.fecha , 
 pag.MontoRegular, pag.mesanio,  acci.fecha, acci.suceso from Cliente cli
