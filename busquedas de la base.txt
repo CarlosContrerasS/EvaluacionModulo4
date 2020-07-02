@@ -23,10 +23,8 @@ select * from PAGOS
 
 
 Listar atrasos clientes (TODOS)  CREAR
-SELECT 
-CLI.RUT, CLI.nombre as "nombre Empresa", PAG.IDPago, PAG.MesAnio as "Fecha de Compromiso" from Cliente Cli
-inner join Pagos PAG on (PAG.RUT = CLI.RUT)
-where TO_DATE(PAG.MesAnio, 'dd/mm/yyyy') <= TRUNC(sysdate); 
+SELECT Cliente.RUT, Cliente.nombre, Pagos.IDPago, Pagos.MesAnio , pagos.montoregular , pagos.montoadicionales from Cliente inner join Pagos on (Pagos.RUT = Cliente.RUT) where TO_DATE(Pagos.MesAnio, 'dd/mm/yyyy') <= TRUNC(sysdate);
+
 
 
 /* 
