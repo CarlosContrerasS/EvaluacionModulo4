@@ -33,10 +33,7 @@ public class ListarAtrasos extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		//response.getWriter().append("Served at: ").append(request.getContextPath());
-		
-
-		
+				
 		Atrasos atra = new Atrasos ();
 		AtrasosDao adao = new AtrasosDao();
 		
@@ -45,8 +42,6 @@ public class ListarAtrasos extends HttpServlet {
 		listaAtrasos = adao.listar();
 		
 		String mensaje = "";
-		
-		System.out.println(listaAtrasos);
 		
 		request.setAttribute("listaAtrasos", listaAtrasos);
 		request.getRequestDispatcher("ListarAtrasos.jsp").forward(request, response);
@@ -58,10 +53,8 @@ public class ListarAtrasos extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		//doGet(request, response);
-	
+		doGet(request, response);	
 		
 	}
 }
-
 
