@@ -10,22 +10,20 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
 import awl.modulo4.dao.VisitaDao;
 import awl.modulo4.model.Visita;
 
-
 /**
- * Servlet implementation class ListarVisita
+ * Servlet implementation class EliminarVisita
  */
-@WebServlet("/ListarVisita")
-public class ListarVisita extends HttpServlet {
+@WebServlet("/EliminarVisita")
+public class EliminarVisita extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ListarVisita() {
+    public EliminarVisita() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -37,12 +35,31 @@ public class ListarVisita extends HttpServlet {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		
-		VisitaDao visdao = new VisitaDao();
+		int idvisita = Integer.parseInt(request.getParameter("idvisita"));
+		
+		Visita vis = new Visita();
+		
+		vis.setIdvisita(idvisita);
+		
+		VisitaDao visitadao = new VisitaDao();
+		
+		boolean eliminar = false;
+		eliminar = visitadao.eliminar(vis);
+
+		String mensaje = "";
+		
+		if (eliminar)
+			mensaje = "La visita ha sido eliminada exitosamente.";
+		else
+			mensaje = "Ocurrió un error al procesar la solicitud";
+
 		List<Visita> listavis = new ArrayList<Visita>();
-		listavis = visdao.listar();
-				
+		listavis = visitadao.listar();				
 		request.setAttribute("listavisita", listavis);
+		
+		request.setAttribute("ccmensaje", mensaje);
 		request.getRequestDispatcher("MostrarVisita.jsp").forward(request, response);		
+		
 	}
 
 	/**
