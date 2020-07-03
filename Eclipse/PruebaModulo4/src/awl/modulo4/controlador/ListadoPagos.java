@@ -12,22 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import awl.modulo4.dao.PagoDao;
 import awl.modulo4.model.Pago;
-package awl.modulo4.controlador;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-import awl.modulo4.dao.ClienteDao;
-import awl.modulo4.dao.PagoDao;
-import awl.modulo4.model.Cliente;
-import awl.modulo4.model.Pago;
 
 /**
  * Servlet implementation class ListadoPagos

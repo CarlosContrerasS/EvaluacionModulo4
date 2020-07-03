@@ -9,9 +9,7 @@ import java.util.List;
 
 import awl.modulo4.conexion.ConexionSingleton;
 import awl.modulo4.idao.IAtrasosDao;
-import awl.modulo4.idao.IClienteDao;
 import awl.modulo4.model.Atrasos;
-import awl.modulo4.model.Cliente;
 
 public class AtrasosDao implements IAtrasosDao {
 

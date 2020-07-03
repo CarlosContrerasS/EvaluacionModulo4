@@ -1,4 +1,4 @@
-ppackage awl.modulo4.model;
+package awl.modulo4.model;
 
 public class Pago {
 

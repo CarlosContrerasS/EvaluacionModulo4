@@ -12,7 +12,7 @@ import awl.modulo4.idao.IPagoDao;
 import awl.modulo4.model.Pago;
 
 public class PagoDao implements IPagoDao {
-
+	
 	public boolean agregar(Pago pago) {
 		// TODO Auto-generated method stub
 		boolean agregar = false;
@@ -102,17 +102,14 @@ public class PagoDao implements IPagoDao {
 	}
 
 	@Override
-	public boolean eliminar(Pago cliente) {
+	public boolean eliminar(Pago pago) {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
-	public Pago buscar(int rutcliente) {
+	public Pago buscar(int idpago) {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
-	
-
 }

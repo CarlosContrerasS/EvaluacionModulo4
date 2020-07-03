@@ -34,14 +34,12 @@ public class ListarAtrasos extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 				
-		Atrasos atra = new Atrasos ();
 		AtrasosDao adao = new AtrasosDao();
 		
 		
 		List<Atrasos> listaAtrasos = new ArrayList<Atrasos>();
 		listaAtrasos = adao.listar();
 		
-		String mensaje = "";
 		
 		request.setAttribute("listaAtrasos", listaAtrasos);
 		request.getRequestDispatcher("ListarAtrasos.jsp").forward(request, response);

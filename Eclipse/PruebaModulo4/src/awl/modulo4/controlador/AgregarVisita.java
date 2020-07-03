@@ -66,7 +66,7 @@ public class AgregarVisita extends HttpServlet {
 		Empleado empb = empleadodao.buscar(rut_empleado);
 		
 		int buscar_rut = clib.getRut();
-		int buscar_rut_empleado = empb.getRut_Empleado();
+		int buscar_rut_empleado = empb.getRut_empleado();
 		
 		boolean agregar = false;
 		
