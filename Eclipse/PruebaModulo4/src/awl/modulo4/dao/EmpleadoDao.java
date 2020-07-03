@@ -15,16 +15,14 @@ public class EmpleadoDao implements IEmpleadoDao {
 
 	public boolean agregar(Empleado empleado) {
 		boolean agregar = false;
+		
 		Statement stm = null;
 		Connection con = null;
 		
-		//String sql ="INSERT INTO Empleado VALUES ('"+ empleado.getRut_Empleado()+ "','"+ empleado.getNombreempleado() + "','" + empleado.getEspecialidad() + "')";
+		String sql = "INSERT INTO Empleado VALUES ('" + empleado.getRut_empleado() + "','" + empleado.getNombreempleado() + "','" + empleado.getEspecialidad() + "')";
 		
-		String sql = "INSERT INTO Empleado VALUES ('"+ empleado.getRut_Empleado()+ "','"+ empleado.getNombreempleado() + "','" + empleado.getEspecialidad() + "')";
-		System.out.println(sql);
 		try {
 			con = ConexionSingleton.getConnection();
-	
 			stm = con.createStatement();
 			stm.execute(sql);
 			agregar = true;
@@ -45,43 +43,43 @@ public class EmpleadoDao implements IEmpleadoDao {
 		Statement stm = null;
 		ResultSet rs = null;
 		
-		String sql = "select * from Empleado ORDER BY Rut_Empleado";
+		String sql = "select * from Empleado ORDER BY rut_empleado";
 		
-		List<Empleado> listaEmpleados = new ArrayList<Empleado>();
+		List<Empleado> listaCliente = new ArrayList<Empleado>();
 		
 		try {
 			con = ConexionSingleton.getConnection();
 			stm = con.createStatement();
 			rs = stm.executeQuery(sql);
 			while (rs.next()) {
-				Empleado em = new Empleado();
-				em.setRut_Empleado(rs.getInt(1));
-				em.setNombreempleado(rs.getString(2));
-				em.setEspecialidad(rs.getString(3));
-				listaEmpleados.add(em);
+				Empleado c = new Empleado();
+				c.setRut_empleado(rs.getInt(1));
+				c.setNombreempleado(rs.getString(2));
+				c.setEspecialidad(rs.getString(3));
+				listaCliente.add(c);
 			}
 			stm.close();
 			rs.close();
 			//con.close();
 		} catch(SQLException e) {
-			System.out.println("Error: Clase EmpleadoDao, método listar ");
+			System.out.println("Error: Clase EmpleadDao, método listar ");
 			e.printStackTrace();
 		}
 		
-		return listaEmpleados;
+		return listaCliente;
 	}
 
 	@Override
 	public boolean actualizar(Empleado empleado) {
 		// TODO Auto-generated method stub
-		
-		System.out.println("Entro");
 		Connection con = null;
 		Statement stm = null;
 		
 		boolean actualizar = false;
 		
-		String sql = "UPDATE Empleado SET nombre = '" + empleado.getNombreempleado()  + "', especialidad = '" + empleado.getEspecialidad() + "' WHERE Rut_Empleado = '" + empleado.getRut_Empleado() + "'";
+		String sql = "UPDATE Empleado SET nombre = '" + empleado.getNombreempleado()  + "', especialidad = '" + empleado.getEspecialidad() + "' WHERE rut_empleado = '" + empleado.getRut_empleado() + "'";
+		
+		System.out.println(sql);
 		
 		try {
 			con = ConexionSingleton.getConnection();
@@ -106,12 +104,16 @@ public class EmpleadoDao implements IEmpleadoDao {
 		
 		boolean eliminar = false;
 		
-		String sql = "DELETE FROM Empleado WHERE Rut_Empleado = " + empleado.getRut_Empleado();
+		String sql = "DELETE FROM Empleado WHERE rut_empleado = " + empleado.getRut_empleado();
+	
 		
 		try {
 			con = ConexionSingleton.getConnection();
+			
 			stm = con.createStatement();
+			
 			stm.execute(sql);
+			
 			eliminar = true;
 			stm.close();
 			//con.close();
@@ -124,13 +126,13 @@ public class EmpleadoDao implements IEmpleadoDao {
 	}
 
 	@Override
-	public Empleado buscar(int Rut_Empleado) {
+	public Empleado buscar(int rut_empleado) {
 		// TODO Auto-generated method stub
 		Connection con = null;
 		Statement stm = null;
 		ResultSet rs = null;
 		
-		String sql = "select * from Empleado WHERE Rut_Empleado = '" + Rut_Empleado + "'";
+		String sql = "select * from Empleado WHERE rut_empleado = '" + rut_empleado + "'";
 		
 		Empleado emp = new Empleado();
 		
@@ -139,7 +141,7 @@ public class EmpleadoDao implements IEmpleadoDao {
 			stm = con.createStatement();
 			rs = stm.executeQuery(sql);
 			while (rs.next()) {
-				emp.setRut_Empleado(rs.getInt(1));
+				emp.setRut_empleado(rs.getInt(1));
 				emp.setNombreempleado(rs.getString(2));
 				emp.setEspecialidad(rs.getString(3));
 			}

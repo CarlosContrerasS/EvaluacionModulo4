@@ -9,11 +9,9 @@ public class Cliente {
 	private String rubro;
 	private String direccion;
 	
-	
-	
 	@Override
 	public String toString() {
-		return "Cliente [Rut=" + rut + ", nombre=" + nombre + ", telefono=" + telefono + ", correoelectronico="
+		return "Cliente [rut=" + rut + ", nombre=" + nombre + ", telefono=" + telefono + ", correoelectronico="
 				+ correoelectronico + ", rubro=" + rubro + ", direccion=" + direccion + "]";
 	}
 
@@ -22,14 +20,15 @@ public class Cliente {
 	}
 	
 	public Cliente(int rut, String nombre, int telefono, String correoelectronico, String rubro, String direccion) {
-		this.rut= rut;
+		super();
+		this.rut = rut;
 		this.nombre = nombre;
 		this.telefono = telefono;
 		this.correoelectronico = correoelectronico;
 		this.rubro = rubro;
 		this.direccion = direccion;
 	}
-	
+
 	public int getRut() {
 		return rut;
 	}

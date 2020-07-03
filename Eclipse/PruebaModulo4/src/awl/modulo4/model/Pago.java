@@ -2,37 +2,39 @@ package awl.modulo4.model;
 
 public class Pago {
 
-	private int idpago;
+	private int rutcliente;
 	private String mesanio;
 	private int montoregular;
 	private int montoadicional;
-	private int clienteid;
+	
+	
+	public Pago() {
+		
+	}
 	
 	
 	
-	
-	public Pago(String mesanio, int montoregular, int montoadicional, int clienteid) {
+
+
+
+	public Pago(int rutcliente, String mesanio, int montoregular, int montoadicional) {
+		super();
+		this.rutcliente = rutcliente;
 		this.mesanio = mesanio;
 		this.montoregular = montoregular;
 		this.montoadicional = montoadicional;
-		this.clienteid = clienteid;
+	}
+
+
+	public int getRutcliente() {
+		return rutcliente;
 	}
 
 
 
-
-	public int getIdpago() {
-		return idpago;
+	public void setRutcliente(int rutcliente) {
+		this.rutcliente = rutcliente;
 	}
-
-
-
-
-	public void setIdpago(int idpago) {
-		this.idpago = idpago;
-	}
-
-
 
 
 	public String getMesanio() {
@@ -77,26 +79,16 @@ public class Pago {
 
 
 
-	public int getClienteid() {
-		return clienteid;
-	}
-
-
-
-
-	public void setClienteid(int clienteid) {
-		this.clienteid = clienteid;
-	}
-
-
 
 
 	@Override
 	public String toString() {
-		return "Pago [idpago=" + idpago + ", mesanio=" + mesanio + ", montoregular=" + montoregular
-				+ ", montoadicional=" + montoadicional + ", clienteid=" + clienteid + "]";
+		return "Pago [rutcliente=" + rutcliente + ", mesanio=" + mesanio + ", montoregular=" + montoregular
+				+ ", montoadicional=" + montoadicional + "]";
 	}
+
+
 	
-	
-	
+
+
 }

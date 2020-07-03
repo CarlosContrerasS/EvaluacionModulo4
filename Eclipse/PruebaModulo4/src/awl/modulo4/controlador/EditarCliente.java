@@ -32,11 +32,26 @@ public class EditarCliente extends HttpServlet {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		
-		int clienteid = Integer.parseInt(request.getParameter("id"));
+		int rut = Integer.parseInt(request.getParameter("rut"));
+		
 		ClienteDao clientedao = new ClienteDao();
-		Cliente cli = clientedao.buscar(clienteid);
+		Cliente cli = clientedao.buscar(rut);
+		
+		int buscar = cli.getRut();
+		String mensaje;
+		
 		request.setAttribute("regcli", cli);
-		request.getRequestDispatcher("EditarCliente.jsp").forward(request, response);
+	
+		if (buscar != 0) {
+			
+			request.getRequestDispatcher("EditarCliente.jsp").forward(request, response);
+		} else {
+			 mensaje = "Rut ingresado no es correcto ";
+			request.setAttribute("ccmensaje", mensaje);
+			//response.sendRedirect("Editar.jsp");
+			request.getRequestDispatcher("Editar.jsp").forward(request, response);
+		}
+		
 	}
 
 	/**
@@ -46,16 +61,18 @@ public class EditarCliente extends HttpServlet {
 		// TODO Auto-generated method stub
 		//doGet(request, response);
 		
+		
+		
 		Cliente cli = new Cliente();
 		
-		int idcliente = Integer.parseInt(request.getParameter("idcliente"));
+		int rut = Integer.parseInt(request.getParameter("rut"));
 		String nombre = request.getParameter("nombre");
 		int telefono = Integer.parseInt(request.getParameter("telefono"));
 		String correo = request.getParameter("correo");
 		String rubro = request.getParameter("rubro");
 		String direccion = request.getParameter("direccion");
 		
-		cli.setRut(idcliente);
+		cli.setRut(rut);
 		cli.setNombre(nombre);
 		cli.setTelefono(telefono);
 		cli.setCorreoelectronico(correo);
@@ -65,6 +82,7 @@ public class EditarCliente extends HttpServlet {
 		ClienteDao clientedao = new ClienteDao();
 		
 		boolean editar = false;
+	
 		editar = clientedao.actualizar(cli);
 		
 		String mensaje = "";

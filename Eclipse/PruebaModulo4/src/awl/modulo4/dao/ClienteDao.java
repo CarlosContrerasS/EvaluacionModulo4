@@ -21,7 +21,7 @@ public class ClienteDao implements IClienteDao {
 		Statement stm = null;
 		Connection con = null;
 		
-		String sql = "INSERT INTO Cliente VALUES (null,'" + cliente.getNombre() + "','" + cliente.getTelefono() 
+		String sql = "INSERT INTO Cliente VALUES ('"+ cliente.getRut()+ "','"+ cliente.getNombre() + "','" + cliente.getTelefono() 
 		+ "','" + cliente.getCorreoelectronico() + "','" + cliente.getRubro() + "','"+ cliente.getDireccion() + "')";
 		
 		try {
@@ -46,7 +46,7 @@ public class ClienteDao implements IClienteDao {
 		Statement stm = null;
 		ResultSet rs = null;
 		
-		String sql = "select * from Cliente ORDER BY ID";
+		String sql = "select * from Cliente ORDER BY rut";
 		
 		List<Cliente> listaCliente = new ArrayList<Cliente>();
 		
@@ -83,8 +83,9 @@ public class ClienteDao implements IClienteDao {
 		
 		boolean actualizar = false;
 		
-		String sql = "UPDATE Cliente SET nombre = '" + cliente.getNombre() + "', telefono = '" + cliente.getTelefono() + "', correoelectronico = '" + cliente.getCorreoelectronico() + "', rubro = '" + cliente.getRubro() + "', direccion = '" + cliente.getDireccion() + "' WHERE id = '" + cliente.getRut() + "'";
+		String sql = "UPDATE Cliente SET nombre = '" + cliente.getNombre() + "', telefono = '" + cliente.getTelefono() + "', correoelectronico = '" + cliente.getCorreoelectronico() + "', rubro = '" + cliente.getRubro() + "', direccion = '" + cliente.getDireccion() + "' WHERE rut = '" + cliente.getRut() + "'";
 		
+	
 		try {
 			con = ConexionSingleton.getConnection();
 			stm = con.createStatement();
@@ -108,12 +109,17 @@ public class ClienteDao implements IClienteDao {
 		
 		boolean eliminar = false;
 		
-		String sql = "DELETE FROM Cliente WHERE id = " + cliente.getRut();
+		String sql = "DELETE FROM Cliente WHERE rut = " + cliente.getRut();
+		
+		System.out.println(sql);
 		
 		try {
 			con = ConexionSingleton.getConnection();
+			System.out.println("1");
 			stm = con.createStatement();
+			System.out.println("2");
 			stm.execute(sql);
+			System.out.println("3");
 			eliminar = true;
 			stm.close();
 			//con.close();
@@ -126,13 +132,13 @@ public class ClienteDao implements IClienteDao {
 	}
 
 	@Override
-	public Cliente buscar(int clienteid) {
+	public Cliente buscar(int rut) {
 		// TODO Auto-generated method stub
 		Connection con = null;
 		Statement stm = null;
 		ResultSet rs = null;
 		
-		String sql = "select * from Cliente WHERE id = '" + clienteid + "'";
+		String sql = "select * from Cliente WHERE rut = '" + rut + "'";
 		
 		Cliente cli = new Cliente();
 		

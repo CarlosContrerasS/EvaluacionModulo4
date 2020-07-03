@@ -14,11 +14,12 @@
 </c:if>
 
 <form method="post" action="AgregarCliente">
-	Nombre: <input type="text" name="nombre" /><br/><br/>
-	Telefono: <input type="text" name="telefono" /><br/><br/>
-	Correo electrónico: <input type="text" name="correo" /><br/><br/>
-	Rubro: <input type="text" name="rubro" /><br/><br/>
-	Dirección: <input type="text" name="direccion" /><br/><br/><br/>
+	Rut: <input type="text" name="rut" /><br/>
+	Nombre: <input type="text" name="nombre" /><br/>
+	Telefono: <input type="text" name="telefono" /><br/>
+	Correo electrónico: <input type="text" name="correo" /><br/>
+	Rubro: <input type="text" name="rubro" /><br/>
+	Dirección: <input type="text" name="direccion" /><br/>
 	<input type="submit" value="Agregar cliente" />
 </form>
 

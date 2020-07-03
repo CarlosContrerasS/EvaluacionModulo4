@@ -1,8 +1,8 @@
 package awl.modulo4.controlador;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+
+
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,7 +11,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import awl.modulo4.dao.ClienteDao;
+
 import awl.modulo4.model.Cliente;
+
 
 /**
  * Servlet implementation class EliminarCliente
@@ -34,11 +36,10 @@ public class EliminarCliente extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
-		int rutcliente = Integer.parseInt(request.getParameter("rut"));
+		int rut = Integer.parseInt(request.getParameter("rut"));
 		
 		Cliente cli = new Cliente();
-		
-		cli.setRut(rutcliente);
+		cli.setRut(rut);
 		
 		ClienteDao clientedao = new ClienteDao();
 		
@@ -47,18 +48,14 @@ public class EliminarCliente extends HttpServlet {
 
 		String mensaje = "";
 		
-		if (eliminar)
+		if (eliminar) {
 			mensaje = "El cliente ha sido eliminado exitosamente.";
-		else
+		}else {
 			mensaje = "Ocurrió un error al procesar la solicitud";
-
-		List<Cliente> listacli = new ArrayList<Cliente>();
-		listacli = clientedao.listar();				
-		request.setAttribute("listaclientes", listacli);
-		
+		}
 		request.setAttribute("ccmensaje", mensaje);
-		request.getRequestDispatcher("ListarClientes.jsp").forward(request, response);		
-		
+		request.getRequestDispatcher("EliminarCliente.jsp").forward(request, response);		
+			
 	}
 
 	/**

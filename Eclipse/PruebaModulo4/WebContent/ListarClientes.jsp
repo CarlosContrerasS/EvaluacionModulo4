@@ -32,8 +32,8 @@
 		<td>${cliente.getRubro()}</td>
 		<td>${cliente.getDireccion()}</td>
 		<td>
-			<a href="${pageContext.request.contextPath}/EliminarCliente?id=${cliente.getIdCliente()}">Eliminar</a>&nbsp;
-			<a href="${pageContext.request.contextPath}/EditarCliente?id=${cliente.getIdCliente()}">Editar</a>&nbsp;
+			<a href="${pageContext.request.contextPath}/EliminarCliente?rut=${cliente.getRut()}">Eliminar</a>&nbsp;
+			<a href="${pageContext.request.contextPath}/EditarCliente?rut=${cliente.getRut()}">Editar</a>&nbsp;
 		</td>
 	</tr>
 	</c:forEach>

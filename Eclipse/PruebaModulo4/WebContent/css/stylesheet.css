@@ -1,0 +1,318 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;   
+}
+nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 0%;
+    width: 100%;
+    padding-top: 1%;
+    background-color: #2d2c2c;
+    -webkit-box-shadow: 0px 4px 11px -3px rgba(0,0,0,0.64);
+    -moz-box-shadow: 0px 4px 11px -3px rgba(0,0,0,0.64);
+    box-shadow: 0px 4px 11px -3px rgba(0,0,0,0.64);
+}
+.menu ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.menu a {
+    display: block;
+    padding: 2em;
+    text-decoration: none;
+}
+.menu a:hover {
+    background-color: #CC673B;
+}
+.menu ul li ul {
+    display: none;
+}
+.menu ul li a:hover + ul, .menu ul li ul:hover {
+    display: block;
+}
+#logo{
+    width: auto;
+    padding-top: 1%;
+    margin: 0% 10% 0% 5%;
+}
+#logo img{
+    width: 30%;
+    height: auto;
+    padding-bottom: 3%;
+}
+#menu{
+    width: 100%;
+    padding-top: 1%;
+    margin-right: 10%;
+}
+#menu ul li{
+    display: inline-block;
+    padding: 0% 2%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: right;
+    color: rgb(224, 213, 213);
+    text-decoration: none;
+    font: 16px verdana;
+}
+#menu ul a:hover{
+    color: #f9ae00;
+}
+#titulo{
+    height: auto;
+    text-align: center;
+    margin: 2% 0% 0% 0%;
+    padding: 0% 4%;
+}
+
+.img_box{
+    border: 2px cadetblue;
+    text-decoration: none;
+    border-radius: 3px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.img_box img{
+    -webkit-box-shadow: 0px 4px 11px -3px rgba(0,0,0,0.64);
+    -moz-box-shadow: 0px 4px 11px -3px rgba(0,0,0,0.64);
+    box-shadow: 0px 4px 11px -3px rgba(0,0,0,0.64);
+}
+.img_box a:link{
+    text-decoration:none;
+    color: #2d2c2c;  
+    cursor: pointer;
+}
+.img_box a:link:hover{
+    color: #f18500;
+}
+.cont_aplicacion{
+   /* display: flex;*/
+    /*justify-content: center;*/
+    background-color: darkgrey;
+    padding: 3% 0% 3% 0%;
+}
+#img_aplicacion{
+    float: left;
+    align-content: center;
+    width: 100%;
+    margin: 0% 3%;
+}
+.img_aplicacion{
+    width: 50%;
+}
+#text_aplicacion{
+    float: left;
+    padding: 0% 3%;
+    text-align: justify;
+}
+#text_aplicacion h2{
+    text-align: center;
+}
+form{  
+    text-align: center;
+    width: 100%;
+}
+.formulario{
+    /*display: flex;*/
+    justify-content: center;
+    width: 80%;
+    text-align: justify;
+    padding: 0% 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+}
+
+.campo_formulario{
+    border: 0px;
+    border-radius: 0% 2% 0% 0%;
+    margin: 1% 0% 2% 0%;
+    width: 50%;
+    height: 30px;
+    background-color: #E0E0E0;
+}
+/* Datos Accidente */
+#accidente_cliente{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    text-align: center;
+    padding: 0%;    
+}
+.formulario_cliente{
+    width: 100%;
+}
+#formulario_acliente form{
+   /* display: flex; */
+    width: 100%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.campo_formulario_acliente{
+    border: 0px;
+    margin: 0% 2% 2% 2%;
+    width: auto;
+    height: 10%;
+    background-color: #E0E0E0;
+}    
+.campo_formulario_acliente_largo{
+    border: 0px;
+    width: 40%;
+    height: 10%;
+    margin: 0% 2% 2% 2%;
+    background-color: #E0E0E0;
+}
+.accidente_datos form{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    text-align: center;
+    padding: 0%;  
+}
+.campo_formulario_accidente{
+    border: 0px;
+    margin: 0% 2% 2% 2%;
+    width: 10%;
+    height: 10%;
+    background-color: #E0E0E0;
+}   
+#campo_formulario_accidente{
+    background-color: #E0E0E0;
+    width: 90%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;  
+    font-weight: 300;
+}
+#lugar_acciente{
+    text-align: center;
+    margin-top: 5%;
+}
+#lugar_acciente form{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    text-align: center;
+    padding: 0%;    
+}
+/*formulario_Agregar_pago*/
+.formulario_Agregar_pago{
+    margin: 3%;
+}
+.campo__Agregar_pago{
+    border: 0px;
+    width: 30%;
+    height: 20%;
+    margin: 0% 2% 2% 2%;
+    background-color: #E0E0E0;
+}
+#submit{
+    text-align: center;
+    margin: 5% 0%;
+}
+footer{
+    background-color: #2d2c2c;
+    margin: 10% 0% 0% 0%;
+    padding: 2%;
+    color: darkgrey;
+    text-align: center;
+}
+@media only screen and (min-width: 100px)  and (max-width: 600px) {
+  /* For mobile phones: */  
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    .contenedor_img_box{
+        justify-content: space-between;
+        float: center;
+    }
+    .img_box img{
+        float: center;
+        width: 80%;
+    }
+    .cont_aplicacion{
+        display: flex;
+        background-color: darkgrey;
+        }
+        .img_aplicacion{
+            width: 250%;
+    }
+}
+@media only screen and (min-width: 601px)  and (max-width: 1060px) {
+  /* For tablets: */
+     .col-l-1 {width: 8.33%;}
+     .col-l-2 {width: 16.66%;}
+     .col-l-3 {width: 25%;}
+     .col-l-4 {width: 33.33%;}
+     .col-l-5 {width: 41.66%;}
+     .col-l-6 {width: 50%;}
+     .col-l-7 {width: 58.33%;}
+     .col-l-8 {width: 66.66%;}
+     .col-l-9 {width: 75%;}
+     .col-l-10 {width: 83.33%;}
+     .col-l-11 {width: 91.66%;}
+     .col-l-12 {width: 100%;}
+     .contenedor_img_box{
+        display: flex;
+        justify-content: space-between;
+      }
+      .img_box img{
+        float: center;
+        width: 90%;
+    }
+      .cont_aplicacion{
+        background-color: darkgrey;
+      }
+      .text_aplicacion {
+          float: right;
+      }
+
+}
+@media only screen and  (min-width: 1061px) {
+  /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    .contenedor_img_box{
+        display: flex;
+        justify-content: space-between;
+      }
+      .img_box img{
+        float: center;
+        width: 90%;
+    }
+      .cont_aplicacion{
+        display: flex;
+        background-color: darkgrey;
+      }
+}
