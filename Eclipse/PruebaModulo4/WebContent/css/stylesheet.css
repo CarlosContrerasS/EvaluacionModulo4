@@ -193,13 +193,6 @@ form{
     font-family: 'Roboto', sans-serif;  
     font-weight: 300;
 }
-#campo_formulario_accidente2{
-    background-color: #E0E0E0;
-    width: 90%;
-    height: 100%;
-    font-family: 'Roboto', sans-serif;  
-    font-weight: 300;
-}
 #lugar_acciente{
     text-align: center;
     margin-top: 5%;

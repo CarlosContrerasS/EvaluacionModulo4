@@ -1,11 +1,11 @@
-package awl.modulo4.model;
+ppackage awl.modulo4.model;
 
 public class Pago {
 
-	private int rutcliente;
+	private int rut;
 	private String mesanio;
 	private int montoregular;
-	private int montoadicional;
+	private int montoadicionales;
 	
 	
 	public Pago() {
@@ -17,23 +17,23 @@ public class Pago {
 
 
 
-	public Pago(int rutcliente, String mesanio, int montoregular, int montoadicional) {
+	public Pago(int rut, String mesanio, int montoregular, int montoadicionales) {
 		super();
-		this.rutcliente = rutcliente;
+		this.rut = rut;
 		this.mesanio = mesanio;
 		this.montoregular = montoregular;
-		this.montoadicional = montoadicional;
+		this.montoadicionales = montoadicionales;
 	}
 
 
-	public int getRutcliente() {
-		return rutcliente;
+	public int getRut() {
+		return rut;
 	}
 
 
 
-	public void setRutcliente(int rutcliente) {
-		this.rutcliente = rutcliente;
+	public void setRut(int rut) {
+		this.rut = rut;
 	}
 
 
@@ -65,15 +65,15 @@ public class Pago {
 
 
 
-	public int getMontoadicional() {
-		return montoadicional;
+	public int getMontoadicionales() {
+		return montoadicionales;
 	}
 
 
 
 
-	public void setMontoadicional(int montoadicional) {
-		this.montoadicional = montoadicional;
+	public void setMontoadicionales(int montoadicionales) {
+		this.montoadicionales = montoadicionales;
 	}
 
 
@@ -83,8 +83,8 @@ public class Pago {
 
 	@Override
 	public String toString() {
-		return "Pago [rutcliente=" + rutcliente + ", mesanio=" + mesanio + ", montoregular=" + montoregular
-				+ ", montoadicional=" + montoadicional + "]";
+		return "Pago [rut=" + rut + ", mesanio=" + mesanio + ", montoregular=" + montoregular
+				+ ", montoadicionales=" + montoadicionales + "]";
 	}
 
 

@@ -2,20 +2,13 @@ package awl.modulo4.idao;
 
 import java.util.List;
 
-import awl.modulo4.model.Pago;
+import awl.modulo4.model.Listado;
 
 
-
-public interface IPagoDao {
-
-	public boolean agregar(Pago pago);
-	public List<Pago> listar();
-	public boolean actualizar(Pago cliente);
-	public boolean eliminar (Pago cliente);
-	public Pago buscar(int rutcliente);	
+public interface IListadoDao {
 	
-
-
+	public List<Listado> listar(int rut_cliente);
+	public List<Listado> listar();
 
 }
 

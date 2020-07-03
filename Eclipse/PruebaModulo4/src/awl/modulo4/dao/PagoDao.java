@@ -22,8 +22,8 @@ public class PagoDao implements IPagoDao {
 		
 
 		
-		String sql = "INSERT INTO Pagos VALUES(null,'"+ pago.getMesanio()+"','"+ pago.getMontoregular()+"','"+ pago.getMontoadicional()+"','"
-				+ pago.getRutcliente() + "')";
+		String sql = "INSERT INTO Pagos VALUES(null,'"+ pago.getMesanio()+"','"+ pago.getMontoregular()+"','"+ pago.getMontoadicionales()+"','"
+				+ pago.getRut() + "')";
 		
 		
 		try {
@@ -60,10 +60,10 @@ public class PagoDao implements IPagoDao {
 			rs = stm.executeQuery(sql);
 			while (rs.next()) {
 				Pago p = new Pago();
-				p.setRutcliente(rs.getInt(1));
+				p.setRut(rs.getInt(1));
 				p.setMesanio(rs.getString(2));
 				p.setMontoregular(rs.getInt(3));
-				p.setMontoadicional(rs.getInt(4));
+				p.setMontoadicionales(rs.getInt(4));
 				listaPagos.add(p);
 			}
 			stm.close();
